@@ -1,0 +1,318 @@
+# Instincts generated from https://github.com/maurice198444/Brevia-Card
+# Generated: 2026-06-08T23:31:20.976Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Brevia-Card-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/maurice198444/Brevia-Card
+---
+
+# Brevia Card Commit Length
+
+## Action
+
+Write moderate-length commit messages (~50 characters)
+
+## Evidence
+
+- Average commit message length: 50 chars
+- Based on 2 commits
+
+---
+id: Brevia-Card-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/maurice198444/Brevia-Card
+---
+
+# Brevia Card Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Brevia-Card-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/maurice198444/Brevia-Card
+---
+
+# Brevia Card Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Brevia-Card-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/maurice198444/Brevia-Card
+---
+
+# Brevia Card Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Brevia-Card-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/maurice198444/Brevia-Card
+---
+
+# Brevia Card Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: domains, editor, interactions, layouts, styles
+
+---
+id: Brevia-Card-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/maurice198444/Brevia-Card
+---
+
+# Brevia Card Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: brevia-card-instinct-filename-camelcase
+trigger: "When creating a new file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Filename Camelcase
+
+## Action
+
+Name the file using camelCase convention
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+
+---
+id: brevia-card-instinct-function-camelcase
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Function Camelcase
+
+## Action
+
+Name the function using camelCase convention
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: brevia-card-instinct-class-pascalcase
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Class Pascalcase
+
+## Action
+
+Name the class using PascalCase convention
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: brevia-card-instinct-constant-screaming-snake-case
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Constant Screaming Snake Case
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE convention
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: brevia-card-instinct-import-relative
+trigger: "When importing modules within the project"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Import Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: brevia-card-instinct-export-named
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Export Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: brevia-card-instinct-try-catch-error-handling
+trigger: "When handling errors in code"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Try Catch Error Handling
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- Pattern in errorHandling.style
+
+---
+id: brevia-card-instinct-test-location-separate
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Test Location Separate
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: brevia-card-instinct-git-commit-freeform
+trigger: "When writing a git commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Git Commit Freeform
+
+## Action
+
+Use a freeform commit message without a required prefix
+
+## Evidence
+
+- Pattern in commits.type
+- Examples in commits.examples
+
+---
+id: brevia-card-instinct-git-commit-short
+trigger: "When composing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: maurice198444/Brevia-Card
+---
+
+# Brevia Card Instinct Git Commit Short
+
+## Action
+
+Keep the commit message concise, around 50 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+- Examples in commits.examples
+
