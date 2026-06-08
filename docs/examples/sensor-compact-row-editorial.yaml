@@ -1,0 +1,7 @@
+# Read-only sensor value with device_class-aware formatting, editorial style.
+type: custom:brevia-card
+entity: sensor.outdoor_temperature
+layout: compact-row
+style: editorial
+overrides:
+  density: compact

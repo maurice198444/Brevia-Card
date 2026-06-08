@@ -1,0 +1,5 @@
+# Now-playing card with album art, transport + volume — cyber neon style.
+type: custom:brevia-card
+entity: media_player.spotify
+layout: single-large
+style: cyber

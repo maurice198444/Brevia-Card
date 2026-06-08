@@ -1,0 +1,7 @@
+# Thermostat with a temperature knob + HVAC mode buttons, minimal style.
+type: custom:brevia-card
+entity: climate.living_room
+layout: single-large
+style: minimal
+overrides:
+  accent: "#e0703a"
