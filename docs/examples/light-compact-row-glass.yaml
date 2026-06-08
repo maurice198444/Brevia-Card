@@ -1,0 +1,7 @@
+# Compact single-line light row with a frosted-glass look.
+# Remember: glass needs something behind the card to blur (a dashboard
+# background image or a coloured view background).
+type: custom:brevia-card
+entity: light.kitchen
+layout: compact-row
+style: glass

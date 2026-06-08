@@ -1,0 +1,31 @@
+{
+  "name": "brevia-card",
+  "version": "1.0.0",
+  "description": "Premium multi-domain Home Assistant Lovelace card (Domain × Layout × Style)",
+  "type": "module",
+  "main": "dist/brevia-card.js",
+  "module": "dist/brevia-card.js",
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "dev": "vite build --watch",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "home-assistant",
+    "lovelace",
+    "custom-card",
+    "lit"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "custom-card-helpers": "^1.9.0",
+    "home-assistant-js-websocket": "^9.4.0",
+    "lit": "^3.1.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  }
+}

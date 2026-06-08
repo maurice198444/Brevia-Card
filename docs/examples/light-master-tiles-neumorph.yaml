@@ -1,0 +1,14 @@
+# A dimmable master light with a grid of room lights — neumorph look.
+type: custom:brevia-card
+domain: light
+layout: master-tiles
+style: neumorph
+master_entity: light.living_room
+name: Living Room
+tile_entities:
+  - light.kitchen
+  - light.hallway
+  - entity: light.desk
+    name: Desk
+    icon: mdi:desk-lamp
+  - light.bedroom
