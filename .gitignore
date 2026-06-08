@@ -1,5 +1,8 @@
 node_modules/
-dist/
+# Ignore build output except the distributable bundle, which is committed so
+# HACS can install it from a tag and it can be attached to a GitHub Release.
+dist/*
+!dist/brevia-card.js
 *.log
 .DS_Store
 .vite/
