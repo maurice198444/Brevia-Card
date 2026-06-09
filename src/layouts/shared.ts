@@ -90,7 +90,7 @@ export function renderRadial(
       <div
         class="ring-core"
         @action=${ctx.primaryAction.onAction}
-        .actionHandler=${ctx.primaryAction.handler}
+        ${ctx.primaryAction.handler}
       >
         ${vm.masterValue
           ? html`<span class="ring-value">${vm.masterValue}</span>

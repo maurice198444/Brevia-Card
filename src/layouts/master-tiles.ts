@@ -18,7 +18,7 @@ export const masterTiles: Layout = {
               <div
                 class="icon-badge ${vm.active ? 'active' : ''}"
                 @action=${ctx.primaryAction.onAction}
-                .actionHandler=${ctx.primaryAction.handler}
+                ${ctx.primaryAction.handler}
                 role="button"
                 tabindex="0"
                 aria-label=${vm.name}
@@ -51,7 +51,7 @@ export const masterTiles: Layout = {
                       ? `color:${t.vm.accent}`
                       : ''}
                     @action=${t.action.onAction}
-                    .actionHandler=${t.action.handler}
+                    ${t.action.handler}
                     role="button"
                     tabindex="0"
                     aria-label=${t.vm.name}

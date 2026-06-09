@@ -16,7 +16,7 @@ export type SliderKind = 'horizontal' | 'radial';
 
 /** Everything needed to wire tap/hold/double-tap onto one element. */
 export interface ActionBinding {
-  /** Value for `.actionHandler=${...}`. */
+  /** Element-part directive: spread bare into the tag — `<div ${handler}>`. */
   handler: DirectiveResult;
   /** Handler for `@action=${...}`. */
   onAction: (ev: ActionHandlerEvent) => void;
