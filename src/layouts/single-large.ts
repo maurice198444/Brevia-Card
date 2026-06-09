@@ -15,7 +15,7 @@ export const singleLarge: Layout = {
           class="icon-badge ${vm.active ? 'active' : ''}"
           style=${vm.active && vm.accent ? `color:${vm.accent}` : ''}
           @action=${ctx.primaryAction.onAction}
-          .actionHandler=${ctx.primaryAction.handler}
+          ${ctx.primaryAction.handler}
           role="button"
           tabindex="0"
           aria-label=${vm.name}

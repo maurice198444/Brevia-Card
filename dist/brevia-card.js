@@ -1032,7 +1032,7 @@ function ze(e, t = "radial") {
       <div
         class="ring-core"
         @action=${e.primaryAction.onAction}
-        .actionHandler=${e.primaryAction.handler}
+        ${e.primaryAction.handler}
       >
         ${i.masterValue ? u`<span class="ring-value">${i.masterValue}</span>
               ${i.masterUnit ? u`<span class="ring-unit">${i.masterUnit}</span>` : h}` : u`<ha-icon icon=${i.icon}></ha-icon>`}
@@ -1071,7 +1071,7 @@ const je = {
           class="icon-badge ${t.active ? "active" : ""}"
           style=${t.active && t.accent ? `color:${t.accent}` : ""}
           @action=${e.primaryAction.onAction}
-          .actionHandler=${e.primaryAction.handler}
+          ${e.primaryAction.handler}
           role="button"
           tabindex="0"
           aria-label=${t.name}
@@ -1097,7 +1097,7 @@ const je = {
           class="icon-badge ${t.active ? "active" : ""}"
           style=${t.active && t.accent ? `color:${t.accent}` : ""}
           @action=${e.primaryAction.onAction}
-          .actionHandler=${e.primaryAction.handler}
+          ${e.primaryAction.handler}
           role="button"
           tabindex="0"
           aria-label=${t.name}
@@ -1125,7 +1125,7 @@ const je = {
               <div
                 class="icon-badge ${t.active ? "active" : ""}"
                 @action=${e.primaryAction.onAction}
-                .actionHandler=${e.primaryAction.handler}
+                ${e.primaryAction.handler}
                 role="button"
                 tabindex="0"
                 aria-label=${t.name}
@@ -1151,7 +1151,7 @@ const je = {
                     class="tile ${r.vm.active ? "active" : ""}"
                     style=${r.vm.active && r.vm.accent ? `color:${r.vm.accent}` : ""}
                     @action=${r.action.onAction}
-                    .actionHandler=${r.action.handler}
+                    ${r.action.handler}
                     role="button"
                     tabindex="0"
                     aria-label=${r.vm.name}
